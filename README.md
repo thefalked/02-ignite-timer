@@ -41,7 +41,7 @@ The project uses:
 
 ## 🔖 Layout
 
-Check the app deployed on Vercel in [here](https://drink-count.vercel.app).
+Check the app deployed on Vercel in [here](https://ignite-timer-thefalked.vercel.app).
 
 ## 🖼 Screenshot
 
