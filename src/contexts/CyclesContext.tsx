@@ -12,6 +12,7 @@ import {
   markCycleAsFinishedAction,
 } from '../reducers/cycles/actions'
 import { Cycle, cyclesReducer } from '../reducers/cycles/reducer'
+import { verifyLocalStorageData } from '../utils/json'
 
 interface CreateCycleData {
   task: string
@@ -50,7 +51,7 @@ export function CyclesContextProvider({
       const storedStateJSON = localStorage.getItem(LOCAL_STORAGE_KEY)
 
       if (storedStateJSON) {
-        return JSON.parse(storedStateJSON)
+        return verifyLocalStorageData(JSON.parse(storedStateJSON)) as any
       }
     },
   )
