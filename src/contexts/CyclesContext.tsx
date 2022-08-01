@@ -35,6 +35,8 @@ interface CyclesContextProviderProps {
   children: ReactNode
 }
 
+const LOCAL_STORAGE_KEY = '@ignite-time:cycles-state-1.0.0'
+
 export function CyclesContextProvider({
   children,
 }: CyclesContextProviderProps) {
@@ -45,9 +47,7 @@ export function CyclesContextProvider({
       activeCycleId: null,
     },
     () => {
-      const storedStateJSON = localStorage.getItem(
-        '@ignite-time:cycles-state-1.0.0',
-      )
+      const storedStateJSON = localStorage.getItem(LOCAL_STORAGE_KEY)
 
       if (storedStateJSON) {
         return JSON.parse(storedStateJSON)
@@ -69,12 +69,10 @@ export function CyclesContextProvider({
   useEffect(() => {
     const stateJSON = JSON.stringify(cyclesState)
 
-    localStorage.setItem('@ignite-time:cycles-state-1.0.0', stateJSON)
+    localStorage.setItem(LOCAL_STORAGE_KEY, stateJSON)
   }, [cyclesState])
 
   const setSecondsPast = (seconds: number) => {
-    console.log('setSecondsPast', seconds)
-
     setAmountSecondsPassed(seconds)
   }
 
