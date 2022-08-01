@@ -70,6 +70,11 @@ $ yarn start
 
 The app will be available in your browser on the address `http://localhost:5173`.
 
+## 🛠 Todo
+
+- [ ] Add plus and minus buttons to the minutes
+- [ ] Add tooltip to the start button
+
 ## 📝 License
 
 This project is under the MIT license. See the [LICENSE](LICENSE) file for more details.
