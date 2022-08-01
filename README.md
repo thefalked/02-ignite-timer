@@ -41,6 +41,8 @@ The project uses:
 
 ## 🔖 Layout
 
+Figma Layou in [here](https://www.figma.com/file/j7yKfcMLsXUHWyBcTITB1R/Ignite-Timer?node-id=11%3A599).
+
 Check the app deployed on Vercel in [here](https://ignite-timer-thefalked.vercel.app).
 
 ## 🖼 Screenshot
