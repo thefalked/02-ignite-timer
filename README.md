@@ -22,12 +22,12 @@
 This project was developed with the following technologies:
 
 - [React](https://reactjs.org)
-- [Vite](https://nextjs.org/)
+- [Vite](https://vitejs.dev/)
 - [TypeScript](https://www.typescriptlang.org/)
 
 ## 🍺 Project
 
-Iginite timer is a simple pomodoro app with a timer and a history.
+Ignite timer is a simple pomodoro app with a timer and a history.
 
 The project uses:
 
